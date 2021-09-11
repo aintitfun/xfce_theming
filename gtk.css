@@ -93,7 +93,8 @@ border-bottom-right-radius: 10px;
 .xfce4-panel.background.horizontal .tasklist button label { padding-right: 3px; }
 
 #pulseaudio-button {
-    border-radius: 3px; 
+    background-image: none;
+    border-radius: 0px; 
     color: black; 
     background-color: aquamarine;
     border: none; 
@@ -108,15 +109,23 @@ border-bottom-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-#pulseaudio-button:hover label {
+#pulseaudio-button:hover {
+    background-image: none;
     background-color: burlywood;
-    color: black;
-}
+    box-shadow: none;
+    }
 
 #pulseaudio-button:checked {
     background-color: black;
-    color: white
+    color: white;
 }
+
+#pulseaudio-button:checked:hover {
+    background-image: none;
+    background-color: burlywood;
+    box-shadow: none;
+}
+
 /*
 #clock-button {
     border-radius: 0px; 
@@ -170,7 +179,23 @@ border-bottom-right-radius: 10px;
 }
 */
 
-#clock-button label {
+#clock-button {
+    border-radius: 0px; 
+    border: none; 
+    background-color: aquamarine;
+    color: black;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* #clock-button label {
     border-radius: 0px; 
     border: none; 
     background-color: aquamarine;
@@ -201,13 +226,50 @@ box-shadow: none;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-}
+} */
 
 #clock-button:hover {
+    background-image: none;
+    background-color: burlywood;
+    box-shadow: none;
+}
+
+/* #clock-button:checked label {
 box-shadow: none; 
 border-radius: 0px; 
     border: none; 
-    background-color:burlywood;
+    background-color:black;
+    color: white;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+background-image: none;
+} */
+
+#clock-button:checked {
+    background-color: black;
+    color: white;
+}
+
+#clock-button:checked:hover {
+    background-image: none;
+    background-color: burlywood;
+    box-shadow: none;
+}
+
+
+/* tomar esta ste de modelo */
+
+#xfce4-power-manager-plugin {
+border-radius: 0px; 
+    border: none; 
+    background-color: aquamarine;
     color: black;
     margin-top: 1px;
     margin-bottom: 1px;
@@ -218,42 +280,21 @@ border-radius: 0px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-background-image: none;
 }
+#xfce4-power-manager-plugin:hover {
+    background-image: none;
+    background-color: burlywood;
+    box-shadow: none;
 
-#clock-button:checked label {
-box-shadow: none; 
-border-radius: 0px; 
-    border: none; 
-    background-color:black;
+}
+   
+#xfce4-power-manager-plugin:checked {
+    background-color: black;
     color: white;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    margin-left: 1px;
-    margin-right: 1px;
-    padding: 1px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-background-image: none;
 }
 
-#clock-button:checked {
-box-shadow: none; 
-border-radius: 0px; 
-    border: none; 
-    background-color:black;
-    color: white;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    margin-left: 1px;
-    margin-right: 1px;
-    padding: 1px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-background-image: none;
+#xfce4-power-manager-plugin:checked:hover {
+    background-image: none;
+    background-color: burlywood;
+    box-shadow: none;
 }
-
