@@ -1,5 +1,5 @@
-@define-color myidle rgb(39, 155, 116);
-@define-color myhover rgb(194, 137, 63);
+@define-color myhover rgb(39, 155, 116);
+@define-color myidle rgb(194, 137, 63);
 @define-color myactive black;
 
 @define-color myidleinner black;
@@ -106,7 +106,7 @@
     background-image: none;
     background-color: @myhover;
     box-shadow: none;
-    color: myhoverinner;
+    color: @myhoverinner;
 }
 
 #clock-button:checked {
@@ -158,3 +158,114 @@ border-radius: 0px;
     color: @myhoverinner;
     box-shadow: none;
 }
+
+/* */
+
+#xfce4-notification-plugin {
+    border-radius: 0px; 
+    border: none; 
+    background-color: @myidle;
+    color: @myidleinner;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#xfce4-notification-plugin:hover {
+    background-image: none;
+    background-color: @myhover;
+    color: @myhoverinner;
+    box-shadow: none;
+
+}
+    
+#xfce4-notification-plugin:checked {
+    background-color: @myactive;
+    color: @myactiveinner;
+}
+
+#xfce4-notification-plugin:checked:hover {
+    background-image: none;
+    background-color: @myhover;
+    color: @myhoverinner;
+    box-shadow: none;
+}
+
+#statusnotifier-8 button {
+    border-radius: 0px; 
+    border: none; 
+    background-color: @myidle;
+    color: @myidleinner;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#statusnotifier-8 button:hover {
+    background-image: none;
+    background-color: @myhover;
+    color: @myhoverinner;
+    box-shadow: none;
+
+}
+    
+#statusnotifier-8 button:checked {
+    background-color: @myactive;
+    color: @myactiveinner;
+}
+
+#statusnotifier-8 button:checked:hover {
+    background-image: none;
+    background-color: @myhover;
+    color: @myhoverinner;
+    box-shadow: none;
+}    
+
+
+#whiskermenu-button {
+    border-radius: 0px; 
+    border: none; 
+    background-color: @myidle;
+    color: @myidleinner;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#whiskermenu-button:hover {
+    background-image: none;
+    background-color: @myhover;
+    color: @myhoverinner;
+    box-shadow: none;
+
+}
+    
+#whiskermenu-button:checked {
+    background-color: @myactive;
+    color: @myactiveinner;
+}
+
+#whiskermenu-button:checked:hover {
+    background-image: none;
+    background-color: @myhover;
+    color: @myhoverinner;
+    box-shadow: none;
+}     
