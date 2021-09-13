@@ -1,56 +1,12 @@
-/*
-.xfce4-panel .tasklist .toggle:checked {
-font-style: monospace;
-background-color: #ff0000;
-color: #ffffff;
-margin-top: 2px;
-margin-bottom: 2px;
-margin-left: 2px;
-margin-right: 2px;
-padding: 10px;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;
-}
-
-.xfce4-panel .tasklist .toggle:hover {
-font-style: monospace;
-color: #ff0000;
-margin-top: 2px;
-margin-bottom: 2px;
-margin-left: 2px;
-margin-right: 2px;
-padding: 10px;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;
-}
-
-.xfce4-panel .tasklist .toggle {
-font-style: monospace;
-background-color: #00ff00;
-color: #272727;
-margin-top: 4px;
-margin-bottom: 4px;
-margin-left: 4px;
-margin-right: 4px;
-padding: 10px;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;
-}*/
-
+@define-color myidle rgb(39, 155, 116);
+@define-color myhover rgb(194, 137, 63);
+@define-color myactive black;
 
 .xfce4-panel.background .tasklist button { 
     border-radius: 3px;
     text-shadow: 0 0px #3c3c3c; 
-    /*color: shade(#fcfcfc, 0.7); */
     color: #000000; 
-    /*background-image: linear-gradient(to bottom, shade(#686868, 0.65), shade(#686868, 0.6), shade(#686868, 0.5), shade(#686868, 0.45)); */
-    background-color: aquamarine;
+    background-color: @myidle;
     border: none; 
     margin-top: 4px;
     margin-bottom: 4px;
@@ -70,17 +26,14 @@ border-bottom-right-radius: 10px;
 }
 
 .xfce4-panel.background .tasklist button:active, .xfce4-panel.background .tasklist button:checked { 
-    /*background-image: linear-gradient(to bottom, shade(#398ee7, 0.65), shade(#398ee7, 0.6), shade(#398ee7, 0.5), shade(#398ee7, 0.45)); */
     color: white; 
-    background-color: black;
+    background-color: @myactive;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 -1px rgba(0, 0, 0, 0.2); 
 }
 
 .xfce4-panel.background .tasklist button:hover, .xfce4-panel.background .tasklist button:active:hover, .xfce4-panel.background .tasklist button:checked:hover { 
-    /*background-image: linear-gradient(to bottom, shade(#398ee7, 0.85), shade(#398ee7, 0.8), shade(#398ee7, 0.7), shade(#398ee7, 0.65));*/
-    background-color: burlywood;
+    background-color: @myhover;
     color: black;
-    /*color: #000000;*/
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 -1px rgba(0, 0, 0, 0.2); 
 }
 
@@ -96,7 +49,7 @@ border-bottom-right-radius: 10px;
     background-image: none;
     border-radius: 0px; 
     color: black; 
-    background-color: aquamarine;
+    background-color: @myidle;
     border: none; 
     margin-top: 1px;
     margin-bottom: 1px;
@@ -111,26 +64,25 @@ border-bottom-right-radius: 10px;
 
 #pulseaudio-button:hover {
     background-image: none;
-    background-color: burlywood;
+    background-color: @myhover;
     box-shadow: none;
     }
 
 #pulseaudio-button:checked {
-    background-color: black;
+    background-color: @myactive;
     color: white;
 }
 
 #pulseaudio-button:checked:hover {
     background-image: none;
-    background-color: burlywood;
+    background-color: @myhover;
     box-shadow: none;
 }
 
-/*
 #clock-button {
     border-radius: 0px; 
     border: none; 
-    background-color: aquamarine;
+    background-color: @myidle;
     color: black;
     margin-top: 1px;
     margin-bottom: 1px;
@@ -142,91 +94,6 @@ border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
-#clock-button:hover label {
-    border-radius: 0%;
-    border: none;
-}
-
-#clock-button:hover label {
-    border-radius: 0px; 
-    border: none; 
-    background-color:burlywood;
-    color: black;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    margin-left: 1px;
-    margin-right: 1px;
-    padding: 1px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-#clock-button:checked label {
-    background-color:black;
-    color: white;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    margin-left: 1px;
-    margin-right: 1px;
-    padding: 1px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-*/
-
-#clock-button {
-    border-radius: 0px; 
-    border: none; 
-    background-color: aquamarine;
-    color: black;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    margin-left: 1px;
-    margin-right: 1px;
-    padding: 1px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-/* #clock-button label {
-    border-radius: 0px; 
-    border: none; 
-    background-color: aquamarine;
-    color: black;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    margin-left: 1px;
-    margin-right: 1px;
-    padding: 1px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-#clock-button:hover label {
-box-shadow: none; 
-    border-radius: 0px; 
-    border: none; 
-    background-color:burlywood;
-    color: black;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    margin-left: 1px;
-    margin-right: 1px;
-    padding: 1px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-} */
 
 #clock-button:hover {
     background-image: none;
@@ -234,32 +101,14 @@ box-shadow: none;
     box-shadow: none;
 }
 
-/* #clock-button:checked label {
-box-shadow: none; 
-border-radius: 0px; 
-    border: none; 
-    background-color:black;
-    color: white;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    margin-left: 1px;
-    margin-right: 1px;
-    padding: 1px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-background-image: none;
-} */
-
 #clock-button:checked {
-    background-color: black;
+    background-color: @myactive;
     color: white;
 }
 
 #clock-button:checked:hover {
     background-image: none;
-    background-color: burlywood;
+    background-color: @myhover;
     box-shadow: none;
 }
 
@@ -269,7 +118,7 @@ background-image: none;
 #xfce4-power-manager-plugin {
 border-radius: 0px; 
     border: none; 
-    background-color: aquamarine;
+    background-color: @myidle;
     color: black;
     margin-top: 1px;
     margin-bottom: 1px;
@@ -283,18 +132,18 @@ border-radius: 0px;
 }
 #xfce4-power-manager-plugin:hover {
     background-image: none;
-    background-color: burlywood;
+    background-color: @myhover;
     box-shadow: none;
 
 }
    
 #xfce4-power-manager-plugin:checked {
-    background-color: black;
+    background-color: @myactive;
     color: white;
 }
 
 #xfce4-power-manager-plugin:checked:hover {
     background-image: none;
-    background-color: burlywood;
+    background-color: @myhover;
     box-shadow: none;
 }
