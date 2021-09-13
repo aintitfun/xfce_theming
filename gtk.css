@@ -2,6 +2,11 @@
 @define-color myhover rgb(194, 137, 63);
 @define-color myactive black;
 
+@define-color myidleinner black;
+@define-color myhoverinner black;
+@define-color myactiveinner white;
+
+
 .xfce4-panel.background .tasklist button { 
     border-radius: 3px;
     text-shadow: 0 0px #3c3c3c; 
@@ -48,7 +53,7 @@
 #pulseaudio-button {
     background-image: none;
     border-radius: 0px; 
-    color: black; 
+    color: @myidleinner; 
     background-color: @myidle;
     border: none; 
     margin-top: 1px;
@@ -65,17 +70,19 @@
 #pulseaudio-button:hover {
     background-image: none;
     background-color: @myhover;
+    color: @myhoverinner;
     box-shadow: none;
     }
 
 #pulseaudio-button:checked {
     background-color: @myactive;
-    color: white;
+    color: @myactiveinner;
 }
 
 #pulseaudio-button:checked:hover {
     background-image: none;
     background-color: @myhover;
+    color: @myhoverinner;
     box-shadow: none;
 }
 
@@ -83,7 +90,7 @@
     border-radius: 0px; 
     border: none; 
     background-color: @myidle;
-    color: black;
+    color: @myidleinner;
     margin-top: 1px;
     margin-bottom: 1px;
     margin-left: 1px;
@@ -97,18 +104,20 @@
 
 #clock-button:hover {
     background-image: none;
-    background-color: burlywood;
+    background-color: @myhover;
     box-shadow: none;
+    color: myhoverinner;
 }
 
 #clock-button:checked {
     background-color: @myactive;
-    color: white;
+    color: @myactiveinner;
 }
 
 #clock-button:checked:hover {
     background-image: none;
     background-color: @myhover;
+    color: @myhoverinner;
     box-shadow: none;
 }
 
@@ -119,7 +128,7 @@
 border-radius: 0px; 
     border: none; 
     background-color: @myidle;
-    color: black;
+    color: @myidleinner;
     margin-top: 1px;
     margin-bottom: 1px;
     margin-left: 1px;
@@ -133,17 +142,19 @@ border-radius: 0px;
 #xfce4-power-manager-plugin:hover {
     background-image: none;
     background-color: @myhover;
+    color: @myhoverinner;
     box-shadow: none;
 
 }
    
 #xfce4-power-manager-plugin:checked {
     background-color: @myactive;
-    color: white;
+    color: @myactiveinner;
 }
 
 #xfce4-power-manager-plugin:checked:hover {
     background-image: none;
     background-color: @myhover;
+    color: @myhoverinner;
     box-shadow: none;
 }
