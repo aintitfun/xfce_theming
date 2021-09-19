@@ -1,5 +1,5 @@
-@define-color myhover rgb(39, 155, 116);
-@define-color myidle rgb(194, 137, 63);
+@define-color myidle rgb(39, 155, 116);
+@define-color myhover rgb(194, 137, 63);
 @define-color myactive black;
 
 @define-color myidleinner black;
@@ -235,6 +235,7 @@ border-radius: 0px;
 
 
 #whiskermenu-button {
+    font-weight: bold;
     border-radius: 0px; 
     border: none; 
     background-color: @myidle;
@@ -243,7 +244,7 @@ border-radius: 0px;
     margin-bottom: 1px;
     margin-left: 1px;
     margin-right: 1px;
-    padding: 1px;
+    padding: 5px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
